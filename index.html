@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS file -->
+</head>
+<body>
+<div id="loading">
+  <div class="loader"></div>
+  <h1 id="loadingText">Loading...</h1> <!-- Text will be changed by JavaScript -->
+</div>
+
+<div id="qrcode" class="qrcode-container hidden"></div> <!-- Initially hidden -->
+
+
+
+  <div id="authenticated" class="hidden">
+    <h1>Successfully Authenticated!</h1>
+  </div>
+
+  <button id="getChatsButton" class="hidden">Get Chats</button>
+
+  <script src="./qrcode.min.js"></script>
+  <script src="./renderer.js"></script>
+</body>
+</html>

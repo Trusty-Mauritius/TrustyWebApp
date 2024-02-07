@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .qrcode-container {
+    max-width: 325px; /* Set a max-width for the QR code */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .qrcode-container img {
+    max-width: 100%; /* Ensure the QR code image fits in the container */
+    height: auto;
+    display: block; /* Centers the image in the container */
+    margin: 0 auto;
+  }
+  
+  
+  button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #005f73;
+  }
+  
+  #qrcode {
+    margin-top: 30px;
+  }
+  
+  .loader {
+    border: 6px solid #f3f3f3; /* Light grey border */
+    border-top: 6px solid #3498db; /* Blue border */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  #authenticated, #loading {
+    margin-top: 20px;
+  }
+  
